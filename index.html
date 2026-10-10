@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header class="topbar">
+        <div class="brand">
+            <button class="three_dash">☰</button>
+            <div class="brand-text">
+                <span class="brand-title">WIKIPEDIA</span>
+                <span class="brand-subtitle">The Encyclopedia</span>
+            </div>
+        </div>
+
+        <div class="search-area">
+            <input type="text" placeholder="Search Wikipedia">
+            <button class="search-button">Search</button>
+        </div>
+
+        <div class="account-links">
+            <button>Create account</button>
+            <button>Log in</button>
+        </div>
+    </header>
+
+    <!-- body -->
+    <div class="page-layout">
+        <!-- Left contents sidebar -->
+        <aside class="sidebar">
+            <h3>Contents</h3>
+            <a href="#top" class="active">(Top)</a>
+            <a href="#description">1. Description</a>
+            <a href="#iridescence" class="sub-link">1.1 Iridescence and structural coloration</a>
+            <a href="#courtship" class="sub-link">1.2 Courtship</a>
+            <a href="#evolution">2. Evolutionary history</a>
+            <a href="#selection" class="sub-link">2.1 Sexual selection for plumage</a>
+            <a href="#behaviour">3. Behaviour</a>
+            <a href="#diet">4. Diet</a>
+            <a href="#culture">5. Cultural significance</a>
+            <a href="#breeding">6. Breeding and colour variations</a>
+            <a href="#references">7. References</a>
+            <a href="#further-reading">8. Further reading</a>
+        </aside>
+
+        <!-- Article content -->
+        <main class="article" id="top">
+            <div class="article-tabs">
+                <div>
+                    <button class="">Article</button>
+                    <button>Talk</button>
+                </div>
+                <div>
+                    <button class="">Read</button>
+                    <button>Edit</button>
+                    <button>View history</button>
+                    <button>Tools :</button>
+                </div>
+            </div>
+
+            <h1>Peafowl</h1>
+            <p class="redirect-note">“Peacock” redirects here. For other uses, see <a href="#">Peacock
+                    (disambiguation)</a>.</p>
+
+            <p><strong>Peafowl</strong> is a common name for three species of large birds. Male peafowl are called
+                <strong>peacocks</strong>, while females are called <strong>peahens</strong>. In everyday speech,
+                “peacock” is often used for both sexes.</p>
+
+            <div class="intro-image">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALgAxAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQACAwYBB//EAD4QAAIBAgQDBgQFAgYCAQUAAAECAwQRABIhMQVBURMiYXGBkRQyofAjQrHB0QbhFSRSYnLxM6KyFkOCksL/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAb/xAAtEQACAgEDAgQGAQUAAAAAAAAAAQIRIQMSMSJBBBNRYRQyQnGBofAGUrHB4f/aAAwDAQACEQMRAD8A5WvmMRcU1nqka75gNCbAgXvbbfnjfh8VLNFDxEkLPclljIFjfc3356X/ADeGNKJaKXh2eoNTYC5R4jGUNtlY6H2wmMwlqJqSmp5CxN1lBDuRfXpy0xz7EnZwRWKGXE2SeIiKfsUkkBkDbqbkWAuNPT0wbRyn4enhbuxWIWcrbUWNz12G/hfS2KcG4dAh/wA4Q7OGLhjoum/gNQR6+o9ZxGkjCjhsTPAGUyzSqQyqenQ8r/yMBwbC5uUNjeEN3SEyLT1c0QDRDs5e1LF3tfXUDkel9sIJ6Ds+IypXIop1USKhf52I3te+1+muMDU/5+KWqllaI2kyLrk3A8joBfF6upjrleSrd42FlikWykW3J0F/XXbAjBxKS04whGuWUrH7AN2dG0tK4ALypcKSdLnXDKgV6tKt3jTI6AXYksWA10/L/PniQ18cFFHHKodXYI6b6Anpttf1HrSk4jHOBDTAoga7Kptc9fH++2mgce5OLt0+AqnSkjjjhkETRgqZSDmKi3ytsNdffBtfPw9pYLMLljHqlgpIvlP745aWl7CaSoYrlDZkI1HgNtxb98OYoqeZI5SxSRRdzYXcnXpob/emFUK6m7FlB2SQxwpDBXQPOzWLLIAAADcFQF1HXzOuLSB0mejpkzBAqxieIXWxvYttyBv4HkcKIK6hlnAkiYG5CrsUFtv1/thxAYhFFKYbOq6yKC5F7Dbc6AdNhe+DLTSdASk8GNS0tbVslXE8fYuJXkD5gq3vqpv03252x5xGCDiMkEDVCr2JyI3ZZc2Y35HXmOnhh8sNDU1UM9WjAoSXAbWQ20v056f3wJXvRvPHU0tCtLM6EGEuHC22Ylbj+4xJtcrsOlTyxFxF4YZkhipgJVFi1swNtAD1wDxmZykOe7Ncqwv+pA9cOp4EiUBV7Mkaa2Ykk8/CxPt54wegqQoAjQwnVjbWxtb9bYtpzXc27bK2DRViiGE2c5btLIx+cczbwxFpqs9+lcRoCtrnKxbcG45eg3GIKGambPFItldiMoJIva5t6X9MaxVNCZmiMWSUubMhyumnUbjw8B4WZbVlCypPAO7KyGrLCNhZXRiDqQDfTW3pzxjW8IdaNqyokjQSsTGEjbW+1zoR+mvjh1HwxpoZalYo6tQqsvZd1WsQRe4XmDprsRjXiKu0FOCRFQRLcEsEV9r6alrkE+XPBhNN5dgVrPBzCU6QU/aVTF5iLCMtoRytjM1MdM3xDBe0zWyk3JvodPv6YaxwyVk0aworsO+R2oBXQfLfW/l/GPIKCllj7s7y20KXABGnTcD7tpi7RWDj9RPjqriC/D1gzRQASRtGtnU769RY89dD44vUozRM2dgkrZnG+/P764yjnZKzI0ENPTJIw0Ulh431P3tgniYSORVSZJFnYP2h1sLaAAdeh8bC2BQ15wL62CmgmCVELyMBo0WUqRc7aG3ljzBStHTKI2qYCN1HZ3sD74mBQbkK34gppAipZSthGApKgbG/v74M4Sk4kZnQsLABEFgo65uo0wvjMETxswLZXubNc2Ot9B9MGHjLsrQJFHmcMma9rg6gn019cJJWacaWD2sr2aoeETOSSSTmIuLczt44yheRF7R42aAWBsC4WwsFv/fkcbU9GyQEyRl3fVUjIYDr5ag4MpkajsZJI/hAcw75uCRyHXTn18bYXdawTaSVGPC1WpWWSNAhcGPK9wQh539tfA4MWkSWozoLSR2W2YOotp1+9PDEV/8AEcvYxPGNVUbJbzHPBtJw+opqrO8pGQLZSNrADbzGvmcCU0gbTB+GUoQwxSMlS63kUrmR/Qi66jr6Yb0kVHQcPp4Go6epqHlIkfOF7JRfUHcmwHU68sa0VG1dIsd3zMbXaTLksDqD6cvHlsLW8LnpZlvVQ1IHdZ4XuCeYtyPhiLlf2HisCmdRJIyRWHZMTGXYDPyF7+Fhg2CPKx7VdbAkqwN/rpy/9ceGmAkvA4ZyNbpoNOn3phnQxU8kqJXWWMWY5QQTz2O30tthJPsh3hWb0r8Pho1oV4fTvFImaaoawkz/AO3TlbTXS1sJZ0hM0VTGiAgELc2IJGtv92nPkPMYZ1M9LLT9tDSS0naZgIJmBtzDX1+xhRRFD2kKFSLZjc6sN9uhth6adPDQseG08DSlpaetA/F7HOw7b/UvmPLz5dL40qouGPkqOFyTZVkMUqykrdrX0uOeAIYQKhY0uv5b8xhjNwsyRuw4nE9RHld6UEFkUnQkXPUcvDCv9/zkOb7C2RVkkGRu6WU58wIvfkfv+HVfS0r8I7ShpKmGOJ1HbOQVnG2gBJ9dMJHSWK2cMJEIAOa9/T728dDU4pNGj3rJuw7AwCmyjsxpYNa2mp+9sZJtOwPD4BKgGSMxkZS18zMbE6fz/wB4T1HCH7dJu0ADKLMDmV72Gvr+hwyq6lUDMrRmR11PdOh0012w1o6OCpokNVVCnyXMssj2RE71v/kPa+GjOyajm7EEFWtHE8RJMbMGIvfTxt6e/jjyWQQ1EkkkUs1PNDlyNIDlawBYC3p1w9r/AOnhw+acx1cU8MqKyyAfkudLD11v06YtQxIwlCRoQISRHv8AlazW8Tf28MVhKKBJUzhKSu+FqO0htCCSGVPm/XDSSoppZ6aVKp4p5TlmGSwQHS97a8/YX64yHBmm4sGlR4omclLqRmI5i415HDKbgwgCVEpZzHdiQArOOVuh36emKvlOwtw57gtHBTUVPNDU2ZkqpA7hbkgLquu+q+G+BK6KKRJDC9mK51VCMy631HLY+21sGVjQ5HVI3laUZiyg2BG5NtuQubH63yhgpYoGqVYjNZT2DElTc8mTX35Y0ZWPp7U7dieGSIBhNFKXzagcvDExeWY07mJYnbLuV6nX98TDnXgGrpIhMpAlEQW4sti2ltddBe/LGvColkl7dXDPEcichroGOmm2JHw8NRLK9Qi5mv2Yv3ri+ot5a6++HPC6emnjURBIyVCjJ3gfFgPLz0vra2JSlgjuXApjqTTvUU0p7OVrAvmIZQNRr08fLlh/AsddannkjBj0/DcqUFtjdbHHnFOFAfjPGS4UBj4A5vY5elt+uNaKBadyqvKxdwTmXNYWJsPDx8AMSlqKunkSUVY+ilHD+HR0lPBTKxYFnlQuGW5v5m1hc/vjKpe1QMsbAEhr2tzI/YYvHHR0XDp6lKJamqYDJCzFB81rk+G9wMYzVkdUTFGM4C2Az5st9xcfQ+XrFJuKtd2BU51ZI5WsnZykpYWJUWt0uT0wYlLRU1E1ZXVbQU6BWCxpe7ElQLWuemFyHIQJAEB1Hhf0574s1QQERJQvPKOfPBgkmr/JpRa6kb8ahplnjMbLkyBiw5/7h46YzooTWZ43kObVirbqLfpywNUTidXjI/EB1B3IxSOcwsHjZgzDITtqdzr539/HG29LL3uhxkZVHD6GPtaenr0qmjss8ajvQv08tD+nkopoZKaZmVRexAe9jb25/S9sETySyIc7KuZjmyC1z4+uL0MmapdanWE94Ha1zddR6b4rajfoSSlte7AO9Uh1C/ibHn9/xixrJe0d0WMPIO/Iq2dhva/oPbB3EU4aEkamoJaVkk7NSzgifez6HQ6fX2AiykoDocug25n7+7Y23Zjv3+wVHT1FuqzOVldM5ZlTNqOnuPvTB1PwSmrSsE3FI4JnjJp4dM0hAv8AfkcCz2iQMFzIQQWPcIt5nn93xSColgsl43ZCRFJYOQDcXFvX3wsUlzx+w6m+PymlXD3ezYGzbW5+Pth3RQwvSxCTiENGXYLnqCLFrWCgHc2GEsiVTlXlUhHUWewI00PPlv5Yss/ZKFmKSgtdQ66XHP8AfB01w3+hJRxhDCspJKWV4qkGRlult9AToPvli/CI0acJGpjCqcqDvXuBYW/bC9q952R3Oc2IJttfXpoL4Io5ZZWJjuVy27vS2v344WHqT2tRdIecSk4kkCw8QjjKu+eK6C4W1iCRod98c7xGeodmhWYPDsYgbHNyzHfrbp6Y3TiEUVKtBG5ZIbhe1Je2Y3Iv7W8BgYyJVRRgkMCQDZgp12A9P0w+5KTceCc4u7oAqqKpqYDTxFnKpkdheyENq1tiuVwRttgupoKbhsEGftXcN/4xZlJB2bQ73vpz8b46Hg7NFFJO0kMaHUvK2ULbe+ngN/DHM8co+JU3HWRwJO2YzwOBdShJGvh3RqN/XFozUgRlJKlijaWeSgyxUsFLJGwz53QBiTvfvb8thtiYTcT4ZVTVCkZDGI1EYDlsq8hck7eePcVwP+THhBepy2hjd53KhTYgAWuTzN9vTHV8I4Qnxio0cdOjALIUvoLXut/EAWtp9McxSoIOyZmL3UsG2IYE6WtoNxfyPXDykqbL+EhHd1UHW56733/6xwasm+Cijm0F1VRTzuYIUnKxymL/ADAVCbHW1uW9tAbYHlgmWpJdVBYXyuNrg3t963ONuEJRTVmaqQllYFe0upcdNtNPHBFfNJM0wSCKFFktThHLB0vzv76bePM0m7Sr8mU9vIDUTZYwhOVrm1hk/XffBHDEoo4KieekM0qRtkRJLdqRYgX3HPfAUheUJ2gBtpewJXx1Bv8AfrWRpIoyYzeNwveta5++uAo0ir0/7Q2tqUlMWaFVdowWBa+W99L6XF/C+mBqZ0V2SRFQbjf9b/8AR164xjZgpAcsdyxFwPp93xtP+IiP2alA2VWIOhsTlPtoemm4xSkm6x/oOmntqQ3NVTRilhgoYJFN2nmkezRaC1tNTqb+owglZZZGEZA0zIvlyHp+2NIyJC8j994yAwGaxA0v05W5+upxlUL2cyEjLsVI6W2+h9sZK6df9NCElLLwFUvDp+JIqwgh3JXObWPO+KVcNZRSiKoCKRp3ddf7ixxm9UFWWmK56aWPvZb6qbfpa2MqioZUjJRkhjyxopvooAA3vf8AtjbUwJy31WC8wzxlVZyyj09MWngyhDJI9liW7ZdRt/PTnikDmoWRmRjzAOo9rY1rJ51cZ4+yKhAQ2hYBbb/Xw+mGkorgp0pUjSCklr5hkZDJEvdzNZR/GmMKrhdVw2eQVLhjfRo9bCw2+mM1ZzHKHi7SCTuSJfmLG1vX75aGtEqhXS6xgBYwPkUADfnYDY4HpZLdNyaaNVqv/JYTM0tlIzd1SL7A+H2NsZOjO415/N08r6YIlRkhUKmVm7mW35ie8L+wv4HFKaGV5ljVndgQ1o7ADwBt764a3eR1GMMlLBVELrM128CB/GGtBWJTU8wjovi/xATAZMpddOZvfy0GFjU8kcjhySxNgzA316Dp/FtsZVThLr2yZhY3Jtfl+2/2RWbqxZxc49I84xS0ccjx8PgYxys2XQdzx10Oo5eGFCWhmDyC4DXAXQk7eHXERz3VQXdl7ne00F7/AH0xpRIjSGNye8+rEXttqP198JFJxEUc22dHRT0U700NdSSTxSKUaQSBVhve5ZdL87+Q0wBxUrHKq5S47K0celso2FjoNOvjgqjoDWQL2Nmne5ylwAR6kX/thTxOjqy6yMgcx3IWRQWJ8NN7X6YLbdJKkcc6XLAo+I0dQgeSj7JhoVS6DTwAtiYBaFaV2EplvIe0HYQtItj43xMXVD7E+wbPmXtlMSlSl1UrppyHpp6D1rFDTRs0kaSo+a57172uvqNdvPXDHikyTVDxROsj08hRykbDvaXte/3fAjU0kZDlLgLewty0+/G+Oba1hnZFpsqgjMzOiRoxJOUWzbn+3nj2WVs7lFZBuCRqevhjCoKuw7KMZ7re+hK+P1w0lpRR0VPJUT5jM2SOPKSBpfXp/wBYZRzhWaTjHMgTs86qyKolW5A1vcg6j15e3hHkmanbKpEzAZhfKJVuPbX09ceS9mG1LwSq2zEkFgbmxFiPvXG3ZfEEpKOzlZQqkAKsl9eZsDp689dSxRZWD3g9FQDtqqpSdXjU/hhyWZhrbW3LritTUg5WETKsqKShNmW3I+P8HA0zvI7ROzRu1wCxKlSDsfI89D12wPF2iyEtpIujpnG3S+vTYeYxsVTRLbLdd4DJJpo8yrGGliUHKv5lItffp+uI8UtTSfh07qV76k7gH5hrvy18+uBjCAY3izlSbRMdB1KX8L39cMqjjzThIxO6RxRsnwyRixc878iNsFKg6uo41SAIQWRDKcsidy23dOu++5bfXGtRCDTqz5smUMQFsGIJW/hgaqklWQxfPnAuU5jQg/pgsx1JoEWWmnQKXyNl+YEDW/mPrgp0Uc1hmVBxAULsxk0FibjY20v+vpjat4ua2nWOomWpmQAPUNGEJ1PIc7Ee2AI4WankzWuLSWOpXUj9/sjF69CKt2huRmIVbXKm9vv+cK1glKHXuTCo4kNOM2xOrbeH6N/64CWI/FloFYvfMLbG5+X75YKqRWQwp20LRRFVAYJa5W4Nv/2+mMIVISSoJzlACma+XMOR1209sFj7rWBvXcM4hTUMErJniTRZDsfH/rwOB+G1/YS5gVOQEZiCVDdT4XB+nU4pFxmR4ZoI+0dZ3EjrJIX1+UWHIYHlC08CxA5nc8/3/X2/3YNK7IxU5pp4GnE+KNWrGzxQPVCMIzQAhCddgddra3wrEaPa0nZ75VzZbm/mL+2BYkkJMeQtrfLz89h+uDoo6fsHkZCIjcM4W+YnXKvXz08b6DAuysI7YlYohEDllOVRlZwNdzoB+3nh/S0NLUR1EUdVEtbHDnMZY3y7d0c9f1GOZqJnWysFFm0AuQByv7efW22CqTiEt8hYW7PQg6t5Y2EiWopydLg3pKhaSrpzOAaimJaKTMe41tb233On8Y9n4l8VIznXMCSW7wsAefp/bADMolJLM6NobtcjzP354cUfDDxAHsmAkzFmWxPesVA58v1wHd9TtIlLShBZAJIYJljLq4ZY1U5U0JA1OJh7EIqEvDPSzs4cn8OE2HnpofDEwPKb4/yTevFCPgdVE3E1aumd81yqncn9fv1wRxMiSollneIHtW7IRBtY+WYb38ufhjnA0sQYCPvAjMTr7/XTqMF5zUQHM3eANx/qX+eo/jGS9jplpNvBYPI8ipFPHMP9DWOX0/jDCKol+HMSllP5Q0l/1398AcDopeIzMYIm7JO+2oHjzx7VytGqzIO2pnH4bXJuPPT7PnhmrWENKcJOpEaF5mdge0GYBgRcr4W++eLUczRuFASQagxv3h6e+M6aRJ4ytPIplXZJO64B/wBPK2+1vLBvCZKOnjqomp1FSyt2c0sdyjf8en63xkh3JxWDWpeKsCxuck1somfQ22s1htp8w6eVsiiqopqoGN4dI2tmN9NCea21BvzHLAFXKDMOycNm+YE5dfDpy0xsKrtqbsZczIm0hBJi5G4G6nrsLcr66jQnvVnoqezZ6eXMGzEMQQbNyK2vqNfCx8rDGnlMuaUkSA5WUHTNyIPMc7/tg/hz01Hw6pR6anFWCDC8l8lut19bW0vjGVviGl7C0uW2XKNWGl1HWxvz/W+DQnmdW0qjGogWRwl4CCVA1ysb332v/wDK2DDxuariP4s7MIwvw7WKJY6ttuddfHCiGR1lMMWZ43UozZSVYEA3t0Gh9MacMjaKuSKVQ2Zuzte24IFv598HNCzUZPng0hlEiyoSq3Tulie9312P9+WNa2douLzlEKMJyBqDrc7W0wVwqDhVpP8AEIKidy4Tso2CmK/5jcja3K+/hjCOKOp41G6yBkWRiXNhot7nTle3jY4FWlYd8W9thFZxyWeB6WaaaRHbOiuotAMuy2F7ajTwwNWxZVipVGURjPJe99dQPS/3fGNDRy1Va0wgZ0zFuyAJN98vuLYvTQ1NRXrBLHIJpms8bc+up2568sFu3YNNRi6svRUyxmaoqVYQRjN8179F9bAc9OmBysvEC9rCVxpmG2n08/M74JjqaX4iRIlilWJfw1l7iStzJ00HTzv1wXxeLh/xobhjPHAozMMxt4/Y1v44zQVq9VUYxwoAEsQpYXI3kI1IW/5Rffpe+4GC44nlh7SmiWXs7BcgJVFAAsOdxbc67nxwmq51iDR3kVCLZV0zeFzoF8Pe5wTwjjb08gkRCKiKIxLYm7A25Xty/tzxqDqSnWDNguc2Ik2+YCym/S1yfMemM+zjqCVgvmk+Y82OWw15fe2CDTy55KniEgjD93LfU333tby38MCtxSnjlVKeMGK4vfQNblffbrfGG3NKwiahShCyVFzm187eP/fLUYlNxKESRRSw9wSCVWzbMDcG4OGD1yT8IenydsZJM6uYlLxiwso06g9efhhNHRSRqqMFVJNnZhfQ2Om/Xly88C6fSRzqR6lQ5ruPz1FS03bt39dwP2/i21tMTAJ4NmP4WdlGlxcfziY1v1E2QBxChkY5o1TYA3BHTl18tsXkp37QlcjDQhSwGuxFz1thkKRTwmStdpDYhQwuQtza1hf6WGFFZBNSSEq5BsCcgufDa5GDzxwdK1E5bStBPV0FbngjLLY2CC/d9MbVtV25/wAwrZW1uDlsfDz8R+mKJNITlkgRyBbN2ZBN/EKTgoVEMbIo7SO++cZxbyOv0wKsMtODd9xe1IpTMJDruso0P7YJSeeEqlbF2tOF0IfVR/tbXx3uPDFKskWsiODdcyJY+2g0OGCUFP8A4dEyVGZ3a8pDBTBppod9eWGQJz2LIItPHVr2sR+MVTqjPlkTy5Hb67DFGQ9mrRnNlO62DKethrvzHlgJ41R2YuCR+ZTYgX++XrgmWtFU/wDn7SEKF7VLK4IsLkfmHj4ctzjRaatGtOq1KtGY8tjYmOwCnqDsPFdj/t0wGFahqwtPMrlWPZzKDZhzBJN/fb1w7lnE9BEsEGZIkIlWCMANewu2gYEfvtjPhPwU8b0/EPwmkFo51JIJFra37rDr00OmmMIpOTqi0PFmoaSSWlWWnWoOUzIilom0JWxFuR9/KwVYZJlWvpksssjKGJ2de8Lacxtgz4Grh4m9H8C9THIMpKaXAN72/Ky678uZ0xnJRmJqiimf4eCVlP4S5cji9iL3sdTpyvg1uwTaSldlPgQeNRx1DhEnUSA57gqdeXgdsUp6had+IvDJmyho9EyjvMRpfwH3yMkFJAtDDBTFDBnUZZS4IG2p2Y21G3Lz1k4lFWUEMDwQC5UIUSzK1u8S3O5t5aDAcak0xXqK7SF1HxCbhsDHNUU5nF1kp7KygEgW/wCRB9hg7i/EJ52aT4fLU1nIgdyM66+Y+ngcWp6WCurkad444o2WOPtts17AE9dQPO+18ZHh00FRUPxaovGsh7Qx2JlPReg/t0Axs0vQK27rFFJw16l3JmjCA3LnQHwF/vTlyJqXcP2NyoDXIZu8x5+uPY56iorw1NTloYwcqqLLCDzzHS/+7xwdX8USpjpkyGaSnRUV21vbmxA7x67Y1Kim53VAS0biAzVTGOm/K7DMW/48ydjjbh+WX8OgQKS1jNINb3Nhbn5DrgGqaoqpEZ5WklINlVbkX0AsNuW38Y24fLUUsnyjRwyhrP3hsbWNjfyxqwNNyrpLVVIkVQ4qS7Ml1bP0v7jQfrjMxwI4RSmo0AW9vU6nUe3mcE1glrJZZ67LmOjdq4VvQX8+f64GSejjmQgmTNY/LZW89B4b3wKGcpJWWkeoRsguikWF73998YGF4znqBIq72Jtm9zcj0w6raynNDTxxgNURsQ02azG5JsQoG23PCdpkfMMx7p2VAbkaXBO/2cbCFjco5HFLxFngXsXniUC1o7G/ibjfEwiNdODpBOwOt9R+mJht7I/DxLUPF54T8PS1XZRtvf5h1sNr4tVVJDZc7LzbML+pH3tjTg8tJ8ejcQgzwgsG20PLljfiwoQGAiVyzsS4UILX0FgdbCw8d8LgtKSjKlEBoqqnatj7Vy0KsCxBNzr9cMuNS0TtJLSZHDkGPQKYxz1B72t9dN8JwYZBnipI4wdL5j3/AB++owRwqE11QtPBDFI/5lzHcb7HBSDqQ3O2wQrV9rmiXKLb6H+cew1NbG7KzHLzutxgmrjhp42tDqSQAj306lQPTltgaGWladFbthqMzJJcBetiNffDVQzaeQk1dErA1tEwIGjwNb9b39/3wXSR8LrWcQ18MQBYqtUMmZfA6jx3xrxZ+FSB5I5mkjcqEK6soA1zDN128PqpYUtl7OogC6WeSncA6dbHAJqd9qGZpayir4oYVzMxFmRrrY6jvC1vQ4ZTGi7QwVqIkoPZSTxKCrMDezgb89dCOuEFLEFlXs6qlUroCtQI+h2NuuHkQEMJqOIUyVmZiAVkWQAjoL/p4YywJKT7BbUlVwunkV3LxGI9nUdqXBTYrfe3S4uL898Bx0E7qVqjT08UEXbLUC2QRLYWuTqNrefjgmaMNQrHfs4p4xJvddT4AgHYaX5bXxlx8yScKqZUZY4OzAlRLqADYActTqeex20xbRlKOoqdZIakoN8Wb/068deorxRNURytljdu5Y/msLg8iLnp1NsVpeDSqY0zx0p7MiJnIfW+vy3A8zpiv9ITL2ckaWLK4cLy1vr9be2HVdDDUROkkK3y2Bf8mm49z7e/B47U1PD+Mlpan89xIy3dUWctWMsCxyU7tDTRoFGbd2Nsxt1v5bYLnpFijSp4rLJKXUtHTo4N/wDkdhf1O/XFl+KgiloWzdlJGAWBLd0m4sNs399hrjOpcQ0ZqE7FbPlvIbObgajy6emOiOVuKQkrysmdHG/Eg1NNKIKcliVjBCoRcgtqGbewNjvoBrgWMUcDOtT2krAaIGshty0138R640mjoHVpp+JySSMu0Udr6DTS37/tgQScPV1SOJ5Qxt3puzufYW9+mDyVVrLZSeplkU08cSRK5tbMAt+dxpfzN8GTUNXHw5alpD2IkKO0d1Aaw8NcVr6R4aFKr4WCOJnKaRte48SQeXjgR+KTzKsEsjFUGiZAy29TgUFOTdoqYHVSwDKjDTMtgR5n70GLJw8SBcm98wuwvfzHLfGMlbkAyyGMDkiiMf8ArbDrgklLNF2lVO6J2ZV1dsz5r922tuvLfBwPOdC9KKoW8nZxqGGa6gsRp7bdemPDTxrIrvUrb5cgQjTpqN8ZmWFHftY5vRwAdd/HFjJTBwckuo5EH20xh29yo6Xh6f0+9ODxKQpLfulbnMnIm9td+u2/T3CKGqpmjFonuNGswOuJjEPL9xbxChq1lcCNlXp+UHwxguclUmVbMdNQ2nLUYf8AEK6nqopBEFjaQmV1QfMxOpI5c9PHCurpmjpo5I4bk3sQua488AvGUmsh/E6GjpII3jqAwaMEFGBzN0AO1tNfH0wqiHYtn+JqIW/M8UQJN9bb40ShriokaMREj53ktcegNhv0xYUkeYZ6tRY3VIoy9wb89sNRlGuXZhakCiSV5zISfxJDe588x+p6Y8qKaOOzJTSmNhcML6D09MUmWEwqkKVckrDvPKyrGDz5a/8AeC6njyvRiHsEjkjQRhkOhHkNDjWJNyXyIU9oscRMlKqEDTvkHHQQ11B/hEcCU5apS5ZcmZHJ8bGwvhVw5amqrhFTl43kuqmPLHpbnYfvjKppZordvLGc63zljJpfkGvp5A42WCbTdN5GFN2jyENw6Oy7q75SbaaA4MSBXpsxpo1DsUVg/wDp35eu+FVN8bIp7MMY3uuYtlTfa2x32Gvhg6gp6uGKajqqgtHezU0ea/ibXGUW6kHwONTEnhUhjQR3WNJSqKhzKXk1NtflPicU49WLUcEqWkapadAodpdATm1IBOtxa3MWIwIBEqNHAUjtbPIL5U1201Y+Q5+uNv6jrfiOCVGfL2jIoESIAQLjvvvZjYd0bbk7XrpwuaOWTqaoF/pmt7HitK0hssgMTHz2+oGO+qQWjYAZmGZhpfT99OfQY+QwSnsRlJDLqCDa2PpfCeNQ8T4c0kRy1EcY7WK2qtbUjkQdfpjr/qPwEtTZ4lK+z9icejkUMEZ1zU06q7GRpVk3AHeHiBcdNOmPZ1poaU2MUipo6lirW+/0ONqidQsU1ITEOx/Fpg7dnIltchuSu+ov5E6gDtVLNGwkhzoSEDEAMN9Tpa+p6c9bDHBGFRplIzye1FRFDChBCmXQIspvtYH5v3wDWPUpdJZqtVBJ1YkW5nfxttj0UVNPIwCsrLqyMCLef5h52YePPGdRHNEVPahLGw7UZ0cf7XFwfpgNHTGS7mXxq1WaJq8hBZUBVhb6WB/jGkUcq3Sn4pnzMAELJfN79MDJBK0yRTiSEs1kkPfUG2g10HPnvi3EOGtRzQjOpfs1kyvclL8mtp/bA4HTXEeQ+WnrWgSVp1yyMy6I1idQdgbm4+mA5YquBCzPCqM3zNZdR4tYjb9MTiHEK6rhRJ1aaNCMoVu710O3t4YBgeqy6/FRnX/xjMCPS3j7YI0LrqDYJ++vaU8couLtHKGJ8rH7vhzXGng4XG6OJagsQIxe4Tz6+uOfqTLHKw+ISVrkhZ1ub+TXH1xSOeckGSGJwNzFYetlwPYWUX8w0hmpFiWzSqTqQrg2PTcfpj3DWgo6KWEu7WUt3MzuGy+IymxvfniYwvmL1Odf4hEKwQxRKzqBcEk201vywc3F1/w+GGRFSZEMavHc906nS9vvx1GngeJwrtGwjsSybsbnr4n6YzTsQhEByySKVGubQjkPf3wt+5aThLDZSO7lFSKSQnVgzeX5QB+uNOGSx03EFmq1U099FW1yLA+Phvg15aOnQlqjtZFXVFAABN76DT1wubigLx01LFEl3AD/ADHU9TtbTlhlkzlBqrGFbTpLaSMoYSuQSPZc99+Q1t0vvgH4KMBpI1LKCCYwuQW02O51v02x0lHwalilgjkLPMxXM8xLG9rEWsOduWC6/h8fwoenCRyAG0ikAkgbA/KPPfDvTaNBxUaOaj4XWoY5KdY6Mtchowc7C97/AOo7Dw2wZNw8ay1jColKgFnIe5vpZdve5wD8dUXAcsLEj5SQSL6AfM53303xqjT1SyMe0iiRBnLH8RhewBt8g29tsKvcSThdhhWWN3yd0hLPY3ZAf9UnIa7ab9dMZTUl6ZDFJ+GSQTHYag7c7E8iQfIa49mr6BKVGlqo+zMYyqj94SXN1ZbX/wDyP02wrqON0geR4XmPdzFhFmsRpcXGg5eAwHqU8EZ22EPVrTtFeAOy5kWMHKFB6E8+eY66YXcdqopKao/ERCSCI11LbAee17+XPTGc39TU0NNGRROZXSzFwtmIJuxO9ztjnZ+IfGzSylAgY3Cryx1eETnqpPgy0ZXbCaV7LbrhlwGujoeMQS1Wb4Zzknt/oOhwiSbUY0adcephqwnCWnLgRwd8HfV01AleYqCoSppyolQMxutiRlPtoeh9cSeQSrGIaeaPulTI6A3uToRa2UaC3PzxwJ4rJR1MU1Ow7RVtrh1Q/wBVVswJaJGbKy5uajc+B9ceV8Vp+VrNQdoZeHfJ0sORGyVML9ooYoikFWuPyOTe3Pr1xjJDmDvHIWYkhylg235hs+3g3nhZFx2eNEB4e0iqlgDayjkAANMGU/8AUdOY8lTEEm7MxqC1lFz8zDmVtpjnTfcSmnxRZIzTqrAtALDMwB7O1+anVfTQ+WLxw071FqiFs50Mq/KxPS2mnUX3wNBxSlqFWGSrRHYqWnR2uLC1hfRQeeDnqKWkhjLlA8476CzWIOlwBY6dLWwrlZeE1fAs4hS1FJNI9G6hI+5dW1W/LTbQ8sY03ERBMzVEClGAWTKuW/XbngqthVMs6tNA7qVGTfQ2uRvY33vgWogqAFNTCSSNZYRZrf8AEgX+nngplJSjJUEVnE4eK8QedAkNwBkaMhTpYWI1B88ASLLEFZ6dmS+jQyDL9L9caQ0FSSWjYMp2KjU+YOt/fC9ql4KjIyyKcurLp7+49sGhYzpUgwTSKLDt7DllB/8A6GJgbt4G1lZ83+xRb9cTAo29+h1xoqKankNPUmoCSWZ2Yxd3/VYgeHvvgKpRyhi4PwFzEp0qJ5swcqdbKPAjc462uiVx+LIQFuC+UWbW/TxtrjGupfiE7NZY2MY0YtcDXptuOXTE3qFfh4Q4RwX+F8Qmqolq6inSNmt2MRGhB5rty+uGPA+DUdDxiCpr65mSnkZgrrlzML2tffUD6dcO6rglXVFzJWQRK5Jyr3yi/Sw9emMz/SUMuVqmrrZnUC7nLY76DS+NHVp2K4TfGAmXjNA9VN8FKol7N7KncD9BduZAHPl64wkruJcSTKIKziMUlmj7KLIEIN9CosRpr+uB1/o2i7RMsU8xcMQokP02P7fswg4BT0cKpFJxeRCdYxUEBOtgG229sM9dS5d/YVeHdciCc8S4bVVBr6BlkkiIkHaAOqnmCCSLfphQ1bxuqqs1KJ42Y5UIGQZP+R5HQ+2O8j4ROhlqjRIjM3fklALnnmLb/wDePZJHEMsMSQ5o0uxEfyjlr+hxJaseNrKx0orscHH/AE5xZpS8iqF3ZzIG18hgo/05xCJJI/iqVEvucwLa/wCkXtttrjthHUy0QAaMxs1zaQW0vawvvr9fLAVRRxyIZUmOQMSWCg+diPT++Jz15rEY/oZquDjD/TGeyy1Ybc9xBbflc3x7/wDRtHJKixV80EZJV2kQSEdNBa3iNdOuOxp6KMLJKYSQFAtmKjc2JXU9LC4Gm2DRTyRwiR5GMJ/+4FtYdb2+n74aGpqrN/oZJvk+Y8O/pHjFe9QiiOJYCMzNIFzb/LcjNsfs4xqv6Y4jBUwx3VopWy9rqFS5PzdNsfVJKVZlzShRHESC8e5Y33v5Y1hUJwyqT4aVlLBc1rSX1OovqNOote2Oj4nUMkfNaL+kIo6tf8RqnNOJLM0CXOXrrzOnvgtOERDOKPtCgLRrcgFlvzt/OO3rqSnjhzyxqrK2Uo8Q7p1t6nXS/TFBTJM5eE5ADmAIAJ/tYD38cc8/ESA2cuOGZKaQLIyWXQMw100sPK2KTf08skoaSobsyWPdS+XwO3K3tzx1NRw1XhSNI2zyuFDPIGYDkTY2tvfTn5Y2io+Hoz9pPmWLvEKxsLmwHgAL38xhVralAOKX+nqMxfh1LMdWP4Y0t4X+v84Pp+DQmiCNmWUaGz3BOlzz8d8dKUoDZUTuqxMnZN8xGthr11ta3PnbFYqOneQCJJXWOwVTlI0P5j7dOe1hgfESXYVpd0c1FwisgQFKtYhlFhqdOmx6+GKCi4rV0arTfDdx2Nla+a5Nz5+Hjjp4qKOVGmiZ7ZSAQu50sDqbfNsBy2wSeDqimVaqnZ1GYAAnzufMb4ZeIfeINkH9JxUPDON0pExp4ZZFYZYje6tqMwuNdDguj4b/AFD28sUsdHJHG1yVljzDyBsTtoDz8zjr1hmtnpxnGgvCxUX08uX3ocZLTViVDQlUjNr5ZGAYWsdNdL+GBLxLX0menDijieNf03Oa5mb4GLOMwT4jKbeNhbHuOzYA2ZnplzKDplN/HXXHmN8UvQZKHoJh/UfEpcnZxRiwPyR/MTe5A25/T3aUXGZTGEaGYuO6c11D2sb258/c8seYmNboSM2wz/E3eWQyNAj2uURQyh+g16n0xRa+aSSPNVxqjfOqqCR420Fjp1O+gxMTAbwXTwWlngAdjcEAqFDC7766b+XP3wPIsMsjZJ3U7K5GVW1/6v4+uPcTAvIkuDSOuAFpZnYEkAXzAmw10HgffGRWGW0izJFFYFlK37+moPodb62PQ49xMO5NKxrpGUU9OjCKOoYAMToRYkgdD10+xigrIo0YyswcG+smwvcA2/5X/wChj3ExLz50K9SQvbjAWYCL/wAVjkfJudBve+1jgqXisBfO8kvdNlI0LefhiYmJ+bKxFqSPZuKzCijkindB2zR5wupFgN/AX98atxD4r+nqmpeWRJ45Y0Ol9bNc33BPe87YmJh97Zt7FcdSsid0SMobMQzXzNe/pr489sRnWqkJlbKgFsu2n7f395iYkmxFJ0aRyxpMHjYRgG9rZT5C25N/1x78TEAqlTIL31XQ/r0AxMTBc3VBlN1RirRiYvGiqN3juTY8z4Y3jrjG/Zsi2P8AszfxfXlyxMTC7nGWBVJpm1dxC9V2yITkUKcwsDbXXXxx4vFKhO+EaxvmRO9z2N8TEwN7YN8rDY62KsoXU54XkAEZi28Rfx/UeOA3iiMkhkc5bMSnzEjfriYmH+Z5GcmwZ8+droW10tIwNvEW3xMTEwNqEs//2Q=="
+                    alt="Peacock displaying its colourful train">
+                <p class="caption">An Indian peacock displaying his train.</p>
+            </div>
+
+            <p>The two Asian species are the Indian peafowl and the green peafowl. The Congo peafowl is native to the
+                Congo Basin in Central Africa. Male peafowl are known for their bright plumage, long feathers and loud
+                calls.</p>
+
+            <div class="info-box">
+                <h3>Scientific classification</h3>
+                <table>
+                    <tr>
+                        <th>Kingdom</th>
+                        <td>Animalia</td>
+                    </tr>
+                    <tr>
+                        <th>Phylum</th>
+                        <td>Chordata</td>
+                    </tr>
+                    <tr>
+                        <th>Class</th>
+                        <td>Aves</td>
+                    </tr>
+                    <tr>
+                        <th>Order</th>
+                        <td>Galliformes</td>
+                    </tr>
+                    <tr>
+                        <th>Family</th>
+                        <td>Phasianidae</td>
+                    </tr>
+                    <tr>
+                        <th>Tribe</th>
+                        <td>Pavonini</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2 id="description">1. Description</h2>
+            <p>Indian peafowl have iridescent blue and green plumage. The male's long display train is made of elongated
+                upper-tail covert feathers, many of which have eye-shaped markings. A crest sits on the head of both
+                males and females.</p>
+            <p>Peahens usually have brown, grey and green feathers that help them blend into their surroundings. Green
+                peafowl have green and bronze colouring, while Congo peafowl look different from the Asian species.</p>
+
+            <h3 id="iridescence">1.1 Iridescence and structural coloration</h3>
+            <p>The bright colours of peacock feathers are partly produced by tiny structures in the feathers rather than
+                by pigments alone. These structures reflect light in different ways, making the colours appear to change
+                with the viewing angle. This effect is called <strong>iridescence</strong>.</p>
+
+            <h3 id="courtship">1.2 Courtship</h3>
+            <p>During courtship, a male Indian peafowl raises and spreads its train into a large fan. It may vibrate the
+                feathers, move around the female and make loud calls. The display gives the peahen an opportunity to
+                observe the male's feathers and behaviour.</p>
+            <div class="wide-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmGZOYm2mYarZtNGQKSaL6n_keQ811NGGtl3PQP5vGw&s=10"
+                    alt="Peacock with feathers spread">
+                <p class="caption"></p>
+            </div>
+
+            <h2 id="evolution">2. Evolutionary history</h2>
+            <p>Peafowl belong to the tribe Pavonini, within the pheasant family. Fossils and comparisons with related
+                birds help scientists study how these birds evolved and spread across different regions.</p>
+
+            <h3 id="selection">2.1 Sexual selection for plumage</h3>
+            <p>Charles Darwin discussed peacock feathers while developing ideas about sexual selection. Scientists
+                continue to study how feather patterns, displays, calls and other traits influence courtship and
+                survival.</p>
+
+            <h2 id="behaviour">3. Behaviour</h2>
+            <p>Peafowl spend much of their time on the ground searching for food, but often roost in trees. They use
+                calls to communicate and may defend small areas from other birds. Their behaviour can vary between
+                species and habitats.</p>
+
+            <h2 id="diet">4. Diet</h2>
+            <p>Peafowl are omnivores. Their diet may include seeds, fruits, flower parts, insects and other small
+                animals. They commonly search through leaf litter and vegetation for food.</p>
+
+            <h2 id="culture">5. Cultural significance</h2>
+            <p>The Indian peafowl has a long history in art, stories and religious traditions. It is also the national
+                bird of India and is widely recognised for its colourful appearance.</p>
+
+            <h2 id="breeding">6. Breeding and colour variations</h2>
+            <p>Peafowl build shallow nests on the ground. The female generally incubates the eggs and cares for the
+                young chicks. Captive populations may also show colour variations that differ from the usual wild
+                plumage.</p>
+
+            <h2 id="references">7. References</h2>
+            <ol>
+                <li>General information about peafowl biology and classification.</li>
+                <li>Research on peafowl courtship displays and feather coloration.</li>
+            </ol>
+
+            <h2 id="further-reading">8. Further reading</h2>
+            <ul>
+                <li><a href="">Indian peafowl</a></li>
+                <li><a href="">Green peafowl</a></li>
+            </ul>
+        </main>
+
+
+        <!-- Right-side  -->
+        <aside class="right-panel">
+            <h3>Appearance</h3>
+            <p>Text</p>
+            <button>Small</button><br>
+            <button class="chosen">Standard</button><br>
+            <button>Large</button>
+            <p>Width</p>
+            <button class="chosen">Standard</button><br>
+            <button>Wide</button>
+            <p>Color</p>
+            <button class="chosen">Automatic</button><br>
+            <button>Light</button><br>
+            <button>Dark</button>
+            <hr>
+        </aside>
+    </div>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <p>Text is available under the <a href="#">Creative Commons Attribution-ShareAlike License</a>; additional terms
+            may apply. By using this site, you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy
+                Policy</a>.</p>
+        <p class="footer-links"><a href="#">Privacy policy</a> · <a href="#">About Wikipedia</a> · <a
+                href="#">Disclaimers</a> · <a href="#">Contact Wikipedia</a> · <a href="#">Code of Conduct</a> · <a
+                href="#">Developers</a> · <a href="#">Statistics</a> · <a href="#">Cookie statement</a> · <a
+                href="#">Mobile view</a></p>
+
+    </footer>
+</body>
+
+</html>
